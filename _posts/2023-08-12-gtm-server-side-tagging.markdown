@@ -16,7 +16,7 @@ sudo yum install -y docker
 
 sudo service docker start
 
-sudo docker run -p 8080:8080 -e CONTAINER_CONFIG='ENTER_YOUR_SECRET_HERE' gcr.io/cloud-tagging-10302018/gtm-cloud-image:stable
+sudo docker run -d -p 80:8080 -e CONTAINER_CONFIG='ENTER_YOUR_SECRET_HERE' gcr.io/cloud-tagging-10302018/gtm-cloud-image:stable
 ```
 
 ![](../images/08/running-gtm-ss-container.png)
@@ -31,3 +31,25 @@ http://18.191.123.32:8080/healthy
 ```
 
 ![](../images/08/health-ok.png)
+
+# GA 4 Dual Tagging
+
+There will be two transports. One for the Google and one for our own GTM server.
+
+![](../images/08/dual-mode.png)
+
+## Parallel Measurement
+
+Dual-tagging here means that you essentially duplicate your existing tagging to collect data to a GA4 property for client-side hits and to a GA4 property for server-side hits.
+
+![](../images/08/to-gtm-server.png)
+
+# GA4
+
+Create a new GA4 property for server side (Dual Mode)
+
+![](../images/08/visitor-live.png)
+
+# Course Completed
+
+![](../images/08/completed.png)
