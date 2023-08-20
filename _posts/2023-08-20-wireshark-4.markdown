@@ -37,3 +37,7 @@ cat $SSLKEYLOGFILE
 # Update Wireshark Preferences
 
 ![](../images/08/update-wireshark.png)
+
+# Decrypt HTTPS Traffic
+
+![](../images/08/decrypted.png)
