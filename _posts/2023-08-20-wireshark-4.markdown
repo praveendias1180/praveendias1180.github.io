@@ -33,3 +33,7 @@ google-chrome-stable &
 cat $SSLKEYLOGFILE
 ```
 ![](../images/08/pre-master-key.png)
+
+# Update Wireshark Preferences
+
+![](../images/08/update-wireshark.png)
