@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Wireshark 4"
+date:   2023-08-20 12:45:19 +0530
+categories: wireshark 
+---
+
+# Install Wireshark 4
+
+```
+sudo apt update
+sudo apt install wireshark
+```
+
+![](../images/08/install-wireshark.png)
